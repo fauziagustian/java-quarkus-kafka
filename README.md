@@ -23,7 +23,7 @@ email-service (Quarkus, port 8082)
   ▼
 PostgreSQL (tabel: polish_registration, email_sender)
 
-
+```
 Tech Stack
 Java 21
 Quarkus 3.x
@@ -35,10 +35,12 @@ Hibernate ORM with Panache
 
 
 # how to run using docker (PostgreSQL & Kafka)
+```
 docker-compose up -d
-
+```
 
 # Sample Curl for testing 
+```
 curl --location 'http://localhost:8081/create-polish' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -47,14 +49,15 @@ curl --location 'http://localhost:8081/create-polish' \
   "productName" : "Premier Insurance Plan",
   "amount": 1000000
 }'
+```
 
 # Sample image running project 
 run project : 
 image-4.png
 Kafka monitoring :
-![alt text](image-1.png)
+![alt text](./image-1.png)
 Databases postgresql :
-![alt text](image-2.png)
-![alt text](image-3.png)
+![alt text](./image-2.png)
+![alt text](./image-3.png)
 Log kafka consumer :
-![alt text](image-5.png)
+![alt text](./image-5.png)
